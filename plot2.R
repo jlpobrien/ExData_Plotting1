@@ -14,7 +14,7 @@ edited_time <-strptime(paste(edited_data$Date,edited_data$Time,sep = " "), "%Y-%
 
 #PLOT 2
 
-plot(edited_time, edited_data$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+plot(edited_time, edited_data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 
 dev.copy(png, file = "plot2.png", height=480, width=480)
 dev.off()
