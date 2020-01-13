@@ -10,6 +10,9 @@ data <- read.table("./household_power_consumption.txt", header=T, sep=";", na.st
 
 data[,"Date"] <- as.Date(data[,"Date"],format = "%d/%m/%Y")
 edited_data<-subset(data,Date == "2007-02-01" | Date == "2007-02-02")
+edited_time <-strptime(paste(edited_data$Date,edited_data$Time,sep = " "), "%Y-%m-%d %H:%M:%S" )
+
+#PLOT1
 
 hist(edited_data$Global_active_power, main = "Global Active Power",  xlab= "Global Active Power (kilowatts)", ylab = "Frequency", col= "Red")
 
