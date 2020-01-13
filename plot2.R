@@ -1,4 +1,4 @@
-setwd("C:/Users/johnl/Desktop/Courses/Data Analysis/Coursera/Exploratory Data Analysis")
+setwd("")
 
 fileurl = "http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 if (!file.exists('./Electric power consumption.zip')){
