@@ -6,7 +6,6 @@ if (!file.exists('./Electric power consumption.zip')){
   unzip("Electric power consumption.zip", exdir = getwd())
 }
 
-#plot1
 data <- read.table("./household_power_consumption.txt", header=T, sep=";", na.strings = "?")
 
 data[,"Date"] <- as.Date(data[,"Date"],format = "%d/%m/%Y")
